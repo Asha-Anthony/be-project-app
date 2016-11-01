@@ -1,0 +1,25 @@
+<html>
+  <access origin="*" />
+  <head>
+    <script src="./js/jquery-1.10.2.js"></script>
+    <script>
+      $.support.cors=true;
+    </script>
+  </head>
+  <body>
+    <script>//$.post("http://127.0.0.1:1337", '{ name:"Donald", town:"Ducktown" }',function(data){alert("got "+data)},"json");</script>
+    <script>
+      function getData(inp)
+      {
+        var addr = "http://192.168.0.105:1337/";//"https://api.ipify.org?format=json"; // THIS works?!
+        var to_send = JSON.stringify(inp);
+        $.support.cors=true;
+        $.get(addr,to_send,function(data){alert(JSON.stringify(data));}); //HAVE TO USE GET!!
+      }
+    </script>
+    <script>
+      ready(getData({"name":"Jacques"});
+      //alert("done!");
+    </script>
+  </body>
+</html>

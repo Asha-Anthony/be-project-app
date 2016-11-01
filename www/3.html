@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet1.css">
+		<title></title>
+	</head>
+	<body  >
+	
+		
+				<div id="s" width="100%">	
+					<b>File Manager</div>
+					
+					<table width="100%">
+					<tr>
+					<td   width="50%"> <a href="index.html"><img src="home.gif" width="9%" height="9%"><a><img src="rpi.png" width="8%" height="8%"></td>
+					<td  width="50%">&emsp;&emsp;<input type="text" name="fname">&emsp; <img src="search.jpg" width="4%" height="7%"> </td>
+					</tr>
+					</table>
+					
+					<table  width="100%" 
+					<tr >
+					<td width="15%"><img src="text.png" width="60px" height="60px"></td>
+					<td><b> abc.txt <div class="popup" onclick="myFunction()">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="download.png" width="7%" height="7%">
+                    <span class="popuptext" id="myPopup">Download complete</span></div>
+					
+					</td>
+					</tr>
+					<tr >
+					<td width="15%"><img src="mp3.png" width="60px" height="60px"></td>
+					<td><b> song.mp3 <div class="popup" onclick="myFunction()">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="download.png" width="7%" height="7%">
+                    <span class="popuptext" id="myPopup">Download complete</span></div>
+					</td>
+					</tr>
+				
+					</tr>
+					</table>
+					<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById('myPopup');
+    popup.classList.toggle('show');
+}
+</script>
+	</body>
+</html>
